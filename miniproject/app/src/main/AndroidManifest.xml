@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miniproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lvm"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lvm"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Miniproject">
+        <activity
+            android:name=".P_PFH"
+            android:exported="false" />
+        <activity
+            android:name=".P_PFR"
+            android:exported="false" />
+        <activity
+            android:name=".P_PLOOP"
+            android:exported="false" />
+        <activity
+            android:name=".P_CE"
+            android:exported="false" />
+        <activity
+            android:name=".P_DS"
+            android:exported="false" />
+        <activity
+            android:name=".P_LT"
+            android:exported="false" />
+        <activity
+            android:name=".P_PS"
+            android:exported="false" />
+        <activity
+            android:name=".P_VD"
+            android:exported="false" />
+        <activity
+            android:name=".P_CM"
+            android:exported="false" />
+        <activity
+            android:name=".P_IN"
+            android:exported="false" />
+        <activity
+            android:name=".C_DMA"
+            android:exported="false" />
+        <activity
+            android:name=".C_FIO"
+            android:exported="false" />
+        <activity
+            android:name=".C_ST"
+            android:exported="false" />
+        <activity
+            android:name=".C_S"
+            android:exported="false" />
+        <activity
+            android:name=".C_A"
+            android:exported="false" />
+        <activity
+            android:name=".C_FR"
+            android:exported="false" />
+        <activity
+            android:name=".C_LCS"
+            android:exported="false" />
+        <activity
+            android:name=".C_CI"
+            android:exported="false" />
+        <activity
+            android:name=".C_IO"
+            android:exported="false" />
+        <activity
+            android:name=".C_VKC"
+            android:exported="false" />
+        <activity
+            android:name=".CPLUS"
+            android:exported="false" />
+        <activity
+            android:name=".JAVA"
+            android:exported="false" />
+        <activity
+            android:name=".PYTHON"
+            android:exported="false" />
+        <activity
+            android:name=".CLANGUAGE"
+            android:exported="false" />
+        <activity
+            android:name=".pdf"
+            android:exported="false" />
+        <activity
+            android:name=".start_page"
+            android:exported="false" />
+        <activity
+            android:name=".button1"
+            android:exported="false" />
+        <activity
+            android:name=".vkey"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

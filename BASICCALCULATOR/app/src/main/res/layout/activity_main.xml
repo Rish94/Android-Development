@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000832"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BASIC CALCULATOR"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="plus"
+        android:text="+"
+        android:textSize="24sp"
+        app:backgroundTint="#FA1111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/minus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/minus"
+        app:layout_constraintTop_toBottomOf="@+id/calculator"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:onClick="minus"
+        android:text="-"
+        android:textSize="24sp"
+        app:backgroundTint="#F80C0C"
+        app:layout_constraintBottom_toTopOf="@+id/multi"
+        app:layout_constraintEnd_toEndOf="@+id/multi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/multi"
+        app:layout_constraintTop_toBottomOf="@+id/plus" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="multi"
+        android:text="*"
+        android:textSize="24sp"
+        app:backgroundTint="#FA1111"
+        app:layout_constraintBottom_toTopOf="@+id/div"
+        app:layout_constraintEnd_toEndOf="@+id/div"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/div"
+        app:layout_constraintTop_toBottomOf="@+id/minus" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="div"
+        android:text="/"
+        android:textSize="24sp"
+        app:backgroundTint="#F81818"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multi" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATED BY RISHABH AGARWAL"
+        android:textColor="#F4EFEF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/div"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <EditText
+        android:id="@+id/n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="-60dp"
+        android:ems="10"
+        android:hint="Enter first Digit"
+        android:inputType="number"
+        android:textColor="#FBF8F8"
+        android:textColorHint="#F4F1F1"
+        app:layout_constraintBottom_toTopOf="@+id/n2"
+        app:layout_constraintEnd_toEndOf="@+id/n2"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/n2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <EditText
+        android:id="@+id/n2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:hint="Enter second Digit"
+        android:inputType="number"
+        android:textColor="#F1EEEE"
+        android:textColorHint="#F4EFEF"
+        app:layout_constraintBottom_toTopOf="@+id/plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n1" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FAF6F6"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="492dp"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n2"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
